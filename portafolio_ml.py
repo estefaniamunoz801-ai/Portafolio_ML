@@ -16,7 +16,7 @@ url_ml = "https://sites.google.com/view/aplicacionesdeia/inicio"
 st.subheader("En el siguiente enlace puedes encontrar páginas y ejercicios prácticos")
 st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ml})")
 
-col1, col2 = st.columns(5)
+col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.subheader("Regresión Lineal")
