@@ -21,7 +21,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.subheader("Clasificación con KNN")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open("knn_clasificacion.png")
+    image = Image.open("imag/knn_clasificacion.png")
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
@@ -33,7 +33,7 @@ with col1:
 with col2:
     st.subheader("Agrupamiento con K-Means")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open("kmeans_consumo_electrico_v2.png")
+    image = Image.open("imag/kmeans_consumo_electrico_v2.png")
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo agrupar datos usando K-Means.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
@@ -43,7 +43,7 @@ with col2:
 with col3:
     st.subheader("Árboles de Decisión")
     # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open("arboles_decision_v2.png")
+    image = Image.open("imag/arboles_decision_v2.png")
     st.image(image, width=190)
     st.write("En el siguiente enlace veremos cómo funciona un árbol de decisión.")
     # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
