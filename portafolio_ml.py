@@ -16,36 +16,46 @@ url_ml = "https://sites.google.com/view/aplicacionesdeia/inicio"
 st.subheader("En el siguiente enlace puedes encontrar páginas y ejercicios prácticos")
 st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ml})")
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(5)
 
 with col1:
-    st.subheader("Clasificación con KNN")
-    # 👇 REEMPLAZA el nombre del archivo de imagen
-    image = Image.open("imag/knn_clasificacion.png")
-    st.image(image, width=190)
-    st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
-    # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
-    url = "https://ml-clasificacion-k-means-svm.streamlit.app/"
-    st.write(f"KNN: [Enlace]({url})")
-
-    
+    st.subheader("Regresión Lineal")
+    image = Image.open("imag/regresion_lineal.png")
+    st.image(image, width=210)
+    st.write("En el siguiente enlace veremos cómo usar la regresión lineal para predecir datos.")
+    url = "https://predictor-en-vivo.streamlit.app/"
+    st.write(f"Regresión Lineal: [Enlace]({url})")
 
 with col2:
+    st.subheader("Regresión Logística")
+    image = Image.open("imag/regresion_logistica.png")
+    st.image(image, width=210)
+    st.write("En el siguiente enlace veremos cómo usar la regresión logística para clasificar datos.")
+    url = "https://app-seguros-python.streamlit.app/"
+    st.write(f"Regresión Logística: [Enlace]({url})")
+
+with col3:
+    st.subheader("Clasificación con KNN")
+    image = Image.open("imag/knn_clasificacion.png")
+    st.image(image, width=210)
+    st.write("En el siguiente enlace veremos cómo clasificar datos usando el algoritmo KNN.")
+    url = "https://ml-clasificacion-k-means-svm.streamlit.app/"
+    st.write(f"KNN: [Enlace]({url})")
+    
+
+with col4:
     st.subheader("Agrupamiento con K-Means")
-    # 👇 REEMPLAZA el nombre del archivo de imagen
     image = Image.open("imag/kmeans_consumo_electrico_v2.png")
-    st.image(image, width=190)
-    st.write("En el siguiente enlace veremos cómo agrupar datos usando K-Means.")
-    # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
+    st.image(image, width=210)
+    st.write("En el siguiente enlace veremos cómo agrupar datos usando K-Means en una app de consumo electrico.")
     url = "https://app-consumo-ml.streamlit.app/"
     st.write(f"K-Means: [Enlace]({url})")
 
-with col3:
+with col5:
     st.subheader("Árboles de Decisión")
-    # 👇 REEMPLAZA el nombre del archivo de imagen
+
     image = Image.open("imag/arboles_decision_v2.png")
-    st.image(image, width=190)
+    st.image(image, width=210)
     st.write("En el siguiente enlace veremos cómo funciona un árbol de decisión.")
-    # 👇 REEMPLAZA la url por la de tu app en Streamlit Cloud
     url = "https://sistema-de-riego-inteligente-ml-arboles-decision.streamlit.app/"
     st.write(f"Árbol de Decisión: [Enlace]({url})")
