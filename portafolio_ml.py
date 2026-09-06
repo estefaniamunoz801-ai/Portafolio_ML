@@ -16,7 +16,7 @@ url_ml = "https://sites.google.com/view/aplicacionesdeia/inicio"
 st.subheader("En el siguiente enlace puedes encontrar páginas y ejercicios prácticos")
 st.write(f"Enlace para páginas y ejercicios: [Enlace]({url_ml})")
 
-col1, col2, col3, col4, col5 = st.columns(5)
+col1, col2, col3, col4, col5, col6 = st.columns(6)
 
 with col1:
     st.subheader("Regresión Lineal")
@@ -59,3 +59,12 @@ with col5:
     st.write("En el siguiente enlace veremos cómo funciona un árbol de decisión.")
     url = "https://sistema-de-riego-inteligente-ml-arboles-decision.streamlit.app/"
     st.write(f"Árbol de Decisión: [Enlace]({url})")
+
+with col6:
+    st.subheader("Medidor de energia con ML")
+
+    image = Image.open("imag/consumo_electrico_influxdb.png")
+    st.image(image, width=210)
+    st.write("En el siguiente enlace veremos un dashboard interactivo para análisis y modelado con Machine Learning de datos de consumo eléctrico almacenados en InfluxDB.")
+    url = "https://medidor-energia-ml.streamlit.app/"
+    st.write(f"Medidor de Energía con ML: [Enlace]({url})")
