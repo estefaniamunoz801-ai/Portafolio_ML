@@ -69,3 +69,32 @@ with col6:
     st.write("En el siguiente enlace veremos un dashboard interactivo para análisis y modelado con Machine Learning de datos de consumo eléctrico almacenados en InfluxDB.")
     url = "https://medidor-energia-ml.streamlit.app/"
     st.write(f"Medidor de Energía con ML: [Enlace]({url})")
+
+
+col7, col8, col9 = st.columns(3, gap="large")
+
+with col7:
+    st.subheader("Redes Neuronales vs Regresión")
+    image = Image.open("imag/redes_neuronales_vs_regresion.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo funciona una neurona artificial, su relación con la regresión lineal y logística.")
+    url = "https://de-la-regresion-a-la-red-neuronal.streamlit.app/"
+    st.write(f"Redes Neuronales vs Regresión: [Enlace]({url})")
+
+with col8:
+    st.subheader("Reconocimiento de Dígitos")
+
+    image = Image.open("imag/reconocimiento_de_digitos.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo una red neuronal reconoce dígitos escritos a mano mediante el conjunto de datos MNIST.")
+    url = "https://reconocimientodedigitos.streamlit.app/"
+    st.write(f"Reconocimiento de Dígitos: [Enlace]({url})")
+
+with col9:
+    st.subheader("Análisis de Sentimientos")
+
+    image = Image.open("imag/analisis_sentimientos_texto.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace analizaremos textos para identificar su polaridad y subjetividad, clasificando los sentimientos como positivos, negativos o neutrales.")
+    url = "https://representaciones-del-lenguaje-ml.streamlit.app/"
+    st.write(f"Análisis de Sentimientos: [Enlace]({url})")
