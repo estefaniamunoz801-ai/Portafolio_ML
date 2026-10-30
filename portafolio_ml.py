@@ -157,7 +157,7 @@ col16, col17, col18 = st.columns(3, gap="large")
 
 with col16:
     st.subheader("Detección en Tiempo Real de Objetos")
-    image = Image.open("imag/imag/deteccion_objetos_yolov5.png")
+    image = Image.open("imag/deteccion_objetos_yolov5.png")
     st.image(image, width=250)
     st.write("En el siguiente enlace exploraremos la detección de objetos en tiempo real usando YOLOv5")
     url = "https://real-time-object-detection-ml.streamlit.app/"
