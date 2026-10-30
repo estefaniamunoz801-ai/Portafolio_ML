@@ -152,3 +152,30 @@ with col15:
     st.write("En el siguiente enlace exploraremos cómo utilizar un modelo de clasificación de imágenes entrenado con Teachable Machine.")
     url = "https://computer-vision-ml.streamlit.app/"
     st.write(f"Reconocimiento de Personas: [Enlace]({url})")
+
+col16, col17, col18 = st.columns(3, gap="large")
+
+with col16:
+    st.subheader("Detección en Tiempo Real de Objetos")
+    image = Image.open("imag/imag/deteccion_objetos_yolov5.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos la detección de objetos en tiempo real usando YOLOv5")
+    url = "https://real-time-object-detection-ml.streamlit.app/"
+    st.write(f"Detección en Tiempo Real de Objetos: [Enlace]({url})")
+
+with col17:
+    st.subheader("Multipages de Machine Learning")
+    image = Image.open("imag/multipagina_machine_learning.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos una plataforma web multipágina que integra diferentes aplicaciones de Machine Learning.")
+    url = "https://multipages-ml.streamlit.app/"
+    st.write(f"Multipages de Machine Learning: [Enlace]({url})")
+
+with col18:
+    st.subheader("Asistente RAG para Análisis de Documentos PDF")
+
+    image = Image.open("imag/asistente_rag_pdf.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo consultar documentos PDF mediante RAG, combinando búsqueda semántica y modelos de lenguaje para generar respuestas.")
+    url = "https://chat-pdf-ml.streamlit.app/"
+    st.write(f"Asistente RAG: [Enlace]({url})")
