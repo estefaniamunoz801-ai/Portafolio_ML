@@ -98,3 +98,30 @@ with col9:
     st.write("En el siguiente enlace analizaremos textos para identificar su polaridad y subjetividad, clasificando los sentimientos como positivos, negativos o neutrales.")
     url = "https://representaciones-del-lenguaje-ml.streamlit.app/"
     st.write(f"Análisis de Sentimientos: [Enlace]({url})")
+
+col10, col11, col12 = st.columns(3, gap="large")
+
+with col10:
+    st.subheader("Recomendador semántico con embeddings")
+    image = Image.open("busqueda_semantica_embeddings.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo utilizar Sentence Transformers y embeddings para encontrar respuestas mediante similitud semántica.")
+    url = "https://app-recomendador-semantico-ml.streamlit.app/"
+    st.write(f"Recomendador semántico: [Enlace]({url})")
+
+with col11:
+    st.subheader("Conversor de Texto a Audio")
+    image = Image.open("imag/conversor_texto_audio.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace convertiremos textos en audio mediante gTTS")
+    url = "https://app-conversor-texto-audio-ml.streamlit.app/"
+    st.write(f"Conversor de Texto a Audio: [Enlace]({url})")
+
+with col12:
+    st.subheader("Traductor de Voz Multilenguaje")
+
+    image = Image.open("imag/traductor_voz_multilenguaje.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo convertir voz en texto, traducirlo a diferentes idiomas y generar audio mediante reconocimiento de voz.")
+    url = "https://app-translate-ml.streamlit.app/"
+    st.write(f"Traductor de Voz Multilenguaje: [Enlace]({url})")
