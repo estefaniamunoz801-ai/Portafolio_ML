@@ -103,7 +103,7 @@ col10, col11, col12 = st.columns(3, gap="large")
 
 with col10:
     st.subheader("Recomendador semántico con embeddings")
-    image = Image.open("busqueda_semantica_embeddings.png")
+    image = Image.open("imag/busqueda_semantica_embeddings.png")
     st.image(image, width=250)
     st.write("En el siguiente enlace exploraremos cómo utilizar Sentence Transformers y embeddings para encontrar respuestas mediante similitud semántica.")
     url = "https://app-recomendador-semantico-ml.streamlit.app/"
