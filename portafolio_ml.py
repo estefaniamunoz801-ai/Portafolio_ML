@@ -125,3 +125,30 @@ with col12:
     st.write("En el siguiente enlace exploraremos cómo convertir voz en texto, traducirlo a diferentes idiomas y generar audio mediante reconocimiento de voz.")
     url = "https://app-translate-ml.streamlit.app/"
     st.write(f"Traductor de Voz Multilenguaje: [Enlace]({url})")
+
+col13, col14, col15 = st.columns(3, gap="large")
+
+with col13:
+    st.subheader("RNN-consumo de energía semanal")
+    image = Image.open("imag/rnn_consumo_energia_semanal.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo una red neuronal recurrente (RNN) aprende patrones semanales de consumo energético.")
+    url = "https://app-rnn-energy-consumption-ml.streamlit.app/"
+    st.write(f"RNN-consumo de energía semanal: [Enlace]({url})")
+
+with col14:
+    st.subheader("Generador de Texto con LSTM")
+    image = Image.open("imag/generador_texto_lstm.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo utilizar una red neuronal LSTM para generar texto.")
+    url = "https://generador-texto-con-lstm-ml.streamlit.app/"
+    st.write(f"Generador de Texto con LSTM: [Enlace]({url})")
+
+with col15:
+    st.subheader("Reconocimiento de Personas mediante Visión Artificial")
+
+    image = Image.open("imag/reconocimiento_personas.png")
+    st.image(image, width=250)
+    st.write("En el siguiente enlace exploraremos cómo utilizar un modelo de clasificación de imágenes entrenado con Teachable Machine.")
+    url = "https://computer-vision-ml.streamlit.app/"
+    st.write(f"Reconocimiento de Personas: [Enlace]({url})")
